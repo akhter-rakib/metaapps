@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/metaapps.iml" filepath="$PROJECT_DIR$/metaapps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/metaapps-api.iml" filepath="$PROJECT_DIR$/api/metaapps-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omod/metaapps-omod.iml" filepath="$PROJECT_DIR$/omod/metaapps-omod.iml" />
+    </modules>
+  </component>
+</project>

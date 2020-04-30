@@ -1,0 +1,2 @@
+org\openmrs\module\metaapps\extension\html\AdminList.class
+org\openmrs\module\metaapps\web\controller\MetaappsController.class
