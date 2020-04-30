@@ -35,5 +35,29 @@
         <addForeignKeyConstraint constraintName="metaapps_item_owner_fk" baseTableName="metaapps_item" baseColumnNames="owner"  referencedTableName="users"
                                  referencedColumnNames="user_id" />
     </changeSet> -->
+    <changeSet author="rakib" id="0102">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="coredeveloper"/>
+            </not>
+        </preConditions>
+        <comment>
+            Create CoreDeveloper  table
+        </comment>
+        <createTable tableName="coredeveloper">
+            <column autoIncrement="true" name="student_id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="developer_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="id_No" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email_id" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
  
 </databaseChangeLog>

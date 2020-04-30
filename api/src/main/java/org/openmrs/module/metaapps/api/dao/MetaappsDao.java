@@ -13,6 +13,7 @@ import org.hibernate.criterion.Restrictions;
 import org.openmrs.api.db.hibernate.DbSession;
 import org.openmrs.api.db.hibernate.DbSessionFactory;
 import org.openmrs.module.metaapps.Item;
+import org.openmrs.module.metaapps.entity.CoreDeveloper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -33,5 +34,9 @@ public class MetaappsDao {
 	public Item saveItem(Item item) {
 		getSession().saveOrUpdate(item);
 		return item;
+	}
+	
+	public void saveDev(CoreDeveloper coreDeveloper) {
+		sessionFactory.getCurrentSession().saveOrUpdate(coreDeveloper);
 	}
 }

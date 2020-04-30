@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.openmrs.module.metaapps.entity.CoreDeveloper" table="coredeveloper">
+        
+        <id name="id" type="int" column="student_id" unsaved-value="0">
+            <generator class="native"/>
+        </id>
+        <property name="coreDeveloperName" type="java.lang.String" column="developer_name" length="10"/>
+        <property name="idNo" type="java.lang.Integer" column="id_No" not-null="true" length="5"/>
+        <property name="emailId" type="java.lang.String" column="email_id" length="10"/>
+    </class>
+</hibernate-mapping>
+
